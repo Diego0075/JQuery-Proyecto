@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Tele-Huerto</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<nav class="navbar">
+    <img src="/img/logo.png"> 
+    <input type="submit" value="Suscríbete">
+
+  </nav>
+
+<header>
+	<div class="container-header">
+		<video autoplay muted loop id="myVideo" >
+			<source src="vid/video-huerto.mp4" type="video/mp4">
+		  </video>
+		
+	</div>
+</header>
+
+<body>
+
+	<div id="productos_container">
+
+	</div>
+
+	<div class="container_form">
+		<h1>Subscipción</h1>
+		<form id="form_registro">
+			<div>
+				<span class="error_form" id="nom_error"></span>
+				<br>
+				<input type="text" id="nombre_form" name="" required="" >
+
+				<label id="nom_label">
+					Nombre
+				</label>	
+			</div>
+
+			<div>
+				<span class="error_form" id="apellidos_error"></span>
+				<br>
+				<input type="text" id="apellidos_form" name="" disabled>
+
+				<label  id="apellidos_label">
+					Apellidos
+				</label>	
+			</div>
+
+			<div>
+				<span class="error_form" id="email_error"></span>
+				<br>
+				<input type="email" id="email_form" name="" required="" disabled>
+				<label id="email_label">
+					Email
+				</label>	
+			</div>
+
+			<div>
+				<span class="error_form" id="nacimiento_error"></span>
+				<br>
+				<input type="date" id="nacimiento_form" name=""  disabled>
+
+				<label id="nacimiento_label">
+					Fecha de nacimiento
+				</label>	
+			</div>
+			
+
+			<input type="submit" value="Registrar" name="">
+        </form>
+    </div>
+    
+	<script src="main.js"></script>
+</body>
+</html>
