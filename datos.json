@@ -2,17 +2,20 @@
     "Productos":[
         {"img":"img/cesta-fruta.png",
          "titulo":"Cesta de fruta",
-         "Cuerpo":"Miles of mountain biking trails cut through the dramatic mountain desert, offering technical terrain for professional and novice mountain bikers alike. Our 5,000-square-foot skills development course gives bikers the opportunity to improve their precision on our top-of-the-line Scott Bikes, and professional guides are also on hand to provide personalized instruction. ",
-         "line":"div",
-         "button":"button"
+         "cuerpo":"En esta cesta incluimos diferentes tipos de frutas en temporada recogidas todas ellas directamente de nuestra propia huerta ecologica.",
+         "precio":"15€/mes"
         },
+
         {"img":"img/cesta-verduras.png",
             "titulo":"Cesta de Verduras",
-            "text":"As the ultimate adrenaline-fueled playground, our paintball course is where members go all-out while competing with friends and family. You won’t just be dodging flying paintballs – obstacles include an abandoned boat, smoke bombs, and trip wires to make any game a true battle. "
+            "cuerpo":"",
+            "precio":"13€/mes"
         },
+        
         {"img":"img/cesta-quesos.png",
             "titulo":"Cesta de chocolate",
-            "text":"Whether your instrument of choice is bow and arrow or axe, fully equipped archery and axe-throwing ranges await for you to sharpen your aim with a series of multiple targets. Members love to compete for glory on these courses in our very own Twin Dolphin Club Mini-Olympics. "
+            "text":"",
+            "precio":"20€/mes"
     
         }
     ],

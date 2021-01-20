@@ -1,15 +1,3 @@
-var myObj = {"array": [
-   { "Cestas": "Frutas", "Precio": "10€/mes", "imagen": "/img/cesta-fruta.png", 
-      "Cestas": "Verduras","Precio":"7€/mes", "imagen":"/img/cesta-verduras.png",
-      "Cestas": "Chocolate", "Precio":"35€", "imagen":"/img/cesta-chocolate.png"}]};
-
-   var myObj2 = JSON.stringify(myObj);
-
-   localStorage.setItem("series", myObj2)
-
-   let serie = JSON.parse(localStorage.getItem("series"));
-
-
 $(function() {
     $("#nombre_form").focusout(function(){
        comprueba_nom();
