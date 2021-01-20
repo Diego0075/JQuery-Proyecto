@@ -19,7 +19,10 @@
 
 }
 .container_form{
+    grid-row-start: 2;
+    grid-row-end: 3;
     border: 2px solid blue;
+    height: 400px;
 }
 
 #header-img{
@@ -46,9 +49,35 @@ video{
 }
 
 
+#container-hero{
+    display: grid;
+    grid-template-rows:1fr 1fr ;
+}
 
+#container-productos{
+    grid-column-start: 1;
+}
 
+#productos-box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    
+}
 
+#cesta1{
+    width: 300px;
+}
+#cesta1>img{
+    
+}
+#cesta2{
+    width: 300px;
+}
+#cesta3{
+    width: 300px;
+}
 
 
 @media screen and (min-width: 556px) and (max-width: 768px){
