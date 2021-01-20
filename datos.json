@@ -1,75 +1,86 @@
 {
-    "Productos":[
-        {"img":"img/cesta-fruta.png",
+    "productos":[
+        {"img":"src/img/cesta-fruta.png",
          "titulo":"Cesta de fruta",
-         "cuerpo":"En esta cesta incluimos diferentes tipos de frutas en temporada recogidas todas ellas directamente de nuestra propia huerta ecologica.",
+         "cuerpo":"En esta cesta incluimos diferentes tipos de frutas en temporada recogidas todas ellas directamente de nuestra propia huerta ecologica libre de pesticidas. El pago de la cuota mensual incluye los gatos de envíos en la logistica propia de la empresa donde cada lunes durante 14 días se recibirá dicha cesta con un peso estimado de 6-8 Kg",
          "precio":"15€/mes"
         },
 
-        {"img":"img/cesta-verduras.png",
+        {"img":"src/img/cesta-verduras.png",
             "titulo":"Cesta de Verduras",
-            "cuerpo":"",
+            "cuerpo":"En esta cesta se incluyen diferentes tipos de verduras en temporada recogidas todas ellas directamente de nuestra propia huerta ecologica libre de pesticidas. El pago de la cuota mensual incluye los gastos de encvíos en la logística propia de la empresa donde cada lunes durante 14 días se recibirá dicha cesta con un peso estimado de 12-16 Kg",
             "precio":"13€/mes"
         },
         
-        {"img":"img/cesta-quesos.png",
+        {"img":"src/img/cesta-quesos.png",
             "titulo":"Cesta de chocolate",
-            "text":"",
-            "precio":"20€/mes"
+            "text":"Esta cesta incluye una tabla de quesos que han sido creados por nuestro propio ganado (vaca - oveja - cabra...). Todos ellos han sido alimentados con pasto ecologico cosechado de nuestra propia huerta donde queremos ofrecer siempre un producto lo más natural posible. El pago de la cuota mensual incluye los gastos de envíos en la logística propia de la empresa donde cada lunes durante 14 días se recibirá dicha cesta con un peso estimado de 4-8 Kg",
+            "precio":"24€/mes"
     
         }
     ],
 
 
-    "testimony":[
-        {"img":"src/images/mujer1.jpg",
-            "name":"Marcellina C.",
-            "date":"01/02/2020",
-            "text":"I like Hotel more and more each day because it makes my life a lot easier"},
-        {"img":"src/images/hombre1.jpg",
-            "name":"Donal H",
-            "date":"14/03/2020",
-            "text":"Thanks guys, keep up the good work! Routes is both attractive and highly adaptable."},
-        {"img":"src/images/hombre2.jpg",
-            "name":"Arnold L",
-            "date":"04/07/2020",
-            "text":"Thanks guys, keep up the good work! Paintball has completely surpassed our expectations. I will recommend you to my colleagues."},
-        {"img":"src/images/hombre3.png",
-            "name":"Douglas R",
-            "date":"24/09/2020",
-            "text":"Archery is the next killer app. I couldn't have asked for more than this. The very best. Archery was the best investment I ever made."},
-        {"img":"src/images/hombre1.jpg",
-            "name":"Cathlene X",
-            "date":"11/01/2020",
-            "text":"We're loving it. Mountain bike is worth much more than I paid."},
-        {"img":"src/images/mujer1.jpg",
-            "name":"Bridgett O",
-            "date":"29/01/2020",
-            "text":"This is simply unbelievable! I would also like to say thank you to all your staff"},
-        {"img":"src/images/mujer2.png",
-            "name":"Auroora A",
-            "date":"21/03/2020",
-            "text":"If you aren't sure, always go for mountain bike. Thanks to mountain bike, we've just launched our 5th website!"},
-        {"img":"src/images/mujer3.png",
-            "name":"Quintilla B",
-            "date":"04/10/2020",
-            "text":"Mountain bike is the most valuable business resource we have EVER purchased. Just what I was looking for"},
-        {"img":"src/images/mujer1.jpg",
-            "name":"Aurea D",
-            "date":"24/12/2020",
-            "text":"Mountain bike should be nominated for service of the year"},
-        {"img":"src/images/mujer2.png",
-            "name":"Carlynn K",
-            "date":"19/12/2020",
-            "text":"It's incredible. You guys rock!"},
-        {"img":"src/images/hombre2.jpg",
-            "name":"Brook X",
-            "date":"28/02/2020",
-            "text":"Definitely worth the investment. I would be lost without mountain bike. Mountain bike is exactly what our business has been lacking."},
-        {"img":"src/images/hombre3.png",
-            "name":"Josef U",
-            "date":"01/01/2020",
-            "text":"Not able to tell you how happy I am with golf."}
+    "testimonios":[
+
+        {"img":"src/img/persona1.jpg",
+            "nombre":"Marta Garcia",
+            "fecha":"01/02/2020",
+            "cuerpo":"Muy rico, un 10"
+        },
+
+        {"img":"src/img/persona2.jpg",
+            "nombre":"Marcelina Sanchez",
+            "fecha":"14/03/2020",
+            "cuerpo":"Mis abuelos estan encantados, se lo han recomendado a mis vecinos"
+        },
+
+        {"img":"src/img/persona3.jpg",
+            "nombre":"Antonio Cruzadas",
+            "fecha":"04/07/2020",
+            "cuerpo":"Siempre quise comer más sano, ahora puedo hacerlo"
+            
+        },
+
+        {"img":"src/img/persona4.jpg",
+            "nombre":"Marcos Berbel",
+            "fecha":"24/09/2020",
+            "cuerpo":"Mejor relación calidad/precio del mercado"
+        },
+
+        {"img":"src/img/persona5.jpg",
+            "nombre":"Paco Ortega",
+            "fecha":"11/01/2020",
+            "cuerpo":"Me regalaron una subscipción de 1 año y pienso mantenerla"
+            
+        },
+
+        {"img":"src/img/persona6.jpg",
+            "nombre":"Lola Muñoz",
+            "fecha":"29/01/2020",
+            "cuerpo":"Envíos muy rapidos y correctos"
+            
+        },
+
+        {"img":"src/img/persona7.jpg",
+            "nombre":"Desire Diop",
+            "fecha":"21/03/2020",
+            "cuerpo":"Mi cesta tenía algun gusano, por lo que chicha gratis para mí"
+           
+        },
+
+        {"img":"src/img/persona8.jpg",
+            "nombre":"Macarena Gomez",
+            "fecha":"04/10/2020",
+            "cuerpo":"Recomiendo la cesta de Quesos, encima cada semana es diferente. Mi favorito el de cabra con nueces y miel"
+        },
+
+        {"img":"src/img/persona9.jpg",
+            "nombre":"Aurora Blezos",
+            "fecha":"24/12/2020",
+            "cuerpo":"El frutero de mi barrio ya ni me conoce. ¡Muchisimas gracias Tele-Huerto!"
+        }
+
     ]
     
 }
