@@ -1,0 +1,63 @@
+{
+    "testimonios":[
+
+    {"img":"src/img/persona1.jpg",
+        "nombre":"Marta Garcia",
+        "fecha":"01/02/2020",
+        "cuerpo":"Muy rico, un 10"
+    },
+
+    {"img":"src/img/persona2.jpg",
+        "nombre":"Marcelina Sanchez",
+        "fecha":"14/03/2020",
+        "cuerpo":"Mis abuelos estan encantados, se lo han recomendado a mis vecinos"
+    },
+
+    {"img":"src/img/persona3.jpg",
+        "nombre":"Antonio Cruzadas",
+        "fecha":"04/07/2020",
+        "cuerpo":"Siempre quise comer más sano, ahora puedo hacerlo"
+        
+    },
+
+    {"img":"src/img/persona4.jpg",
+        "nombre":"Marcos Berbel",
+        "fecha":"24/09/2020",
+        "cuerpo":"Mejor relación calidad/precio del mercado"
+    },
+
+    {"img":"src/img/persona5.jpg",
+        "nombre":"Paco Ortega",
+        "fecha":"11/01/2020",
+        "cuerpo":"Me regalaron una subscipción de 1 año y pienso mantenerla"
+        
+    },
+
+    {"img":"src/img/persona6.jpg",
+        "nombre":"Lola Muñoz",
+        "fecha":"29/01/2020",
+        "cuerpo":"Envíos muy rapidos y correctos"
+        
+    },
+
+    {"img":"src/img/persona7.jpg",
+        "nombre":"Desire Diop",
+        "fecha":"21/03/2020",
+        "cuerpo":"Mi cesta tenía algun gusano, por lo que chicha gratis para mí"
+       
+    },
+
+    {"img":"src/img/persona8.jpg",
+        "nombre":"Macarena Gomez",
+        "fecha":"04/10/2020",
+        "cuerpo":"Recomiendo la cesta de Quesos, encima cada semana es diferente. Mi favorito el de cabra con nueces y miel"
+    },
+
+    {"img":"src/img/persona9.jpg",
+        "nombre":"Aurora Blezos",
+        "fecha":"24/12/2020",
+        "cuerpo":"El frutero de mi barrio ya ni me conoce. ¡Muchisimas gracias Tele-Huerto!"
+    }
+
+    ]
+}

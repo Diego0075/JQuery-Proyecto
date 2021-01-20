@@ -19,10 +19,8 @@
 
 }
 .container_form{
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 3;
     border: 2px solid blue;
-    height: 400px;
 }
 
 #header-img{
@@ -51,11 +49,12 @@ video{
 
 #container-hero{
     display: grid;
-    grid-template-rows:1fr 1fr ;
+    grid-template-rows:1fr 1fr;
 }
 
 #container-productos{
-    grid-column-start: 1;
+    grid-row-start: 1fr;
+    
 }
 
 #productos-box{
@@ -66,19 +65,42 @@ video{
     
 }
 
-#cesta1{
-    width: 300px;
-}
-#cesta1>img{
-    
-}
-#cesta2{
-    width: 300px;
-}
-#cesta3{
-    width: 300px;
+#cestas0{
+    text-align: center;
+    border: 2px solid black;
+    width: 275px;
 }
 
+#cestas1{
+    border: 2px solid black;
+    width: 275px;
+}
+
+#cestas2{
+    border: 2px solid black;
+    width: 275px;
+}
+
+#cestas0
+>img{
+    width: 175px;
+}
+
+#cestas1>img{
+    width: 175px;
+}
+
+#cestas2>img{
+    width: 175px;
+}
+
+#cestas-general{
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: row;
+
+
+}
 
 @media screen and (min-width: 556px) and (max-width: 768px){
     .container_form{

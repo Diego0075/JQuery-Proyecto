@@ -1,3 +1,26 @@
+
+function crearProductos(){
+   $.ajax({
+      dataType:"json",
+      url: "cestas.json",
+      data: "data",
+      success: function(response){
+         for (let i=0; i<3; i++){
+            $("div#cestas"+i.toString()).prepend('<label>'+response.productos[i].precio+'</label>');
+            $("div#cestas"+i.toString()).prepend('<p>'+response.productos[i].cuerpo+'</p>');
+             $("div#cestas"+i.toString()).prepend('<img id="cesta-img" src="'+response.productos[i].img+'"/>');
+             $("div#cestas"+i.toString()).prepend('<h2>'+response.productos[i].titulo+'</h2>');
+
+             
+
+         }
+     }
+ })
+}
+
+crearProductos();
+
+
 $(function() {
     $("#nombre_form").focusout(function(){
        comprueba_nom();

@@ -1,0 +1,23 @@
+{
+    "productos":[
+        {"img":"img/cesta-fruta.png",
+         "titulo":"Cesta de fruta",
+         "cuerpo":"En esta cesta incluimos diferentes tipos de frutas en temporada recogidas todas ellas directamente de nuestra propia huerta ecologica libre de pesticidas. El pago de la cuota mensual incluye los gatos de envíos en la logistica propia de la empresa donde cada lunes durante 14 días se recibirá dicha cesta con un peso estimado de 6-8 Kg",
+         "precio":"15€/mes"
+        },
+
+        {"img":"img/cesta-verduras.png",
+            "titulo":"Cesta de Verduras",
+            "cuerpo":"En esta cesta se incluyen diferentes tipos de verduras en temporada recogidas todas ellas directamente de nuestra propia huerta ecologica libre de pesticidas. El pago de la cuota mensual incluye los gastos de encvíos en la logística propia de la empresa donde cada lunes durante 14 días se recibirá dicha cesta con un peso estimado de 12-16 Kg",
+            "precio":"13€/mes"
+        },
+        
+        {"img":"img/cesta-quesos.png",
+            "titulo":"Cesta de Quesos",
+            "cuerpo":"Esta cesta incluye una tabla de quesos que han sido creados por nuestro propio ganado (vaca - oveja - cabra...). Todos ellos han sido alimentados con pasto ecologico cosechado de nuestra propia huerta donde queremos ofrecer siempre un producto lo más natural posible. El pago de la cuota mensual incluye los gastos de envíos en la logística propia de la empresa donde cada lunes durante 14 días se recibirá dicha cesta con un peso estimado de 4-8 Kg",
+            "precio":"24€/mes"
+    
+        }
+    ]
+   
+}
