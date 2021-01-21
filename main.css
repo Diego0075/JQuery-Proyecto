@@ -189,7 +189,33 @@ video{
 }
 
 
+#testimonio-img{
+    width:75px;
+    border-radius: 75px;
+}
 
+#testimonios-general{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#testimonio0{
+    text-align: center;
+    padding: 75px;
+}
+
+#testimonio1{
+    text-align: center;
+    padding: 75px;
+}
+
+#testimonio2{
+    text-align: center;
+    padding: 75px;
+    position: relative;
+}
 
 @media screen and (min-width: 556px) and (max-width: 768px){
     .container_form{

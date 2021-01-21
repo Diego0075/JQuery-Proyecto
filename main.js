@@ -1,4 +1,26 @@
 
+function crearTestimonios(){
+   $.ajax({
+      dataType:"json",
+      url: "testimonios.json",
+      data: "data",
+      success: function(response){
+      $("img").remove("#testimonio-img");
+         for (let i=0; i<3; i++){
+            let aleatorio = Math.floor(Math.random()*8);
+            $("div#testimonio"+i.toString()).prepend('<img id="testimonio-img" src="'+response.testimonios[aleatorio].img+'"/>');
+            $("h3#nombre"+i.toString()).text(response.testimonios[aleatorio].nombre);
+            $("p#cuerpo"+i.toString()).text(response.testimonios[aleatorio].cuerpo);
+            $("label#fecha"+i.toString()).text(response.testimonios[aleatorio].fecha);
+         }
+      }
+   })
+   setTimeout(crearTestimonios,10000);
+}
+
+crearTestimonios();
+
+
 function crearProductos(){
    $.ajax({
       dataType:"json",
