@@ -5,6 +5,7 @@ function crearTestimonios(){
       url: "testimonios.json",
       data: "data",
       success: function(response){
+      // $("div#testimonio").fadeIn(function() {
       $("img").remove("#testimonio-img");
          for (let i=0; i<3; i++){
             let aleatorio = Math.floor(Math.random()*8);
@@ -13,6 +14,7 @@ function crearTestimonios(){
             $("p#cuerpo"+i.toString()).text(response.testimonios[aleatorio].cuerpo);
             $("label#fecha"+i.toString()).text(response.testimonios[aleatorio].fecha);
          }
+      // });
       }
    })
    setTimeout(crearTestimonios,10000);
