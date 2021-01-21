@@ -1,7 +1,7 @@
 
  .navbar { 
     display: flex;
-    /* background-color: greenyellow; */
+    background-color: #E9F7EF;
     width: 100%;
     height: 70px;
     align-items: center;
@@ -18,10 +18,8 @@
     margin-right: 20px;
 
 }
-.container_form{
-    grid-row-start: 3;
-    border: 2px solid blue;
-}
+
+
 
 #header-img{
     width: 100%;
@@ -30,6 +28,8 @@
 
 body{
     margin: 0;
+    background-color: #E9F7EF;
+
 }
 
 
@@ -49,40 +49,98 @@ video{
 
 #container-hero{
     display: grid;
-    grid-template-rows:1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 0.2fr ;
 }
+
+#usdiv{
+    margin-top: 45px;
+    width: 100%;
+    grid-row:1/2;
+    position: relative;
+}
+
+#usdiv #textus{
+    position: absolute;
+    z-index:-1;
+    text-align: center;
+    width: 100%;
+}
+#usdiv::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    background-image: url(/img/huerto.jpg);
+    background-size: cover;
+    opacity: 0.6;
+  }
+
 
 #container-productos{
-    grid-row-start: 1fr;
-    
+    grid-row: 2/3;
+    display: flex;
+    justify-content:center ;
 }
 
-#productos-box{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    
+#container-testimonios{
+    grid-row: 3/4;
+}
+
+.container_form{
+    grid-row-start: 4/5;
+    border: 2px solid blue;
+
+}
+
+#usdiv>img{
+    width: 100%;
 }
 
 #cestas0{
+    padding: 45px;
+    height: auto;
+    width: 33%;
+    margin-top: 50px;
     text-align: center;
-    border: 2px solid black;
+     border: 4px solid brown; 
+     border-radius: 85px;
+    background-color:burlywood;
     width: 275px;
+    margin-bottom: 75px;
 }
 
 #cestas1{
-    border: 2px solid black;
+    padding: 45px;
+    height: auto;
+    width: 33%;
+    margin-top: 50px;
+    text-align: center;
+    border: 4px solid brown; 
+    border-radius: 85px;
+   background-color:burlywood;
     width: 275px;
+    margin-bottom: 75px;
 }
 
 #cestas2{
-    border: 2px solid black;
+    padding: 45px;
+    margin-top: 50px;
+    height: auto;
+    text-align: center;
+    border: 4px solid brown; 
+    border-radius: 85px;
+   background-color: burlywood;
     width: 275px;
+    margin-bottom: 75px;
 }
 
-#cestas0
->img{
+#cestas0>label{
+}
+
+#cestas0>img{
     width: 175px;
 }
 
@@ -97,10 +155,41 @@ video{
 #cestas-general{
  display: flex;
  flex-wrap: wrap;
- flex-direction: row;
-
-
+ justify-content: center;
 }
+
+
+.bañadir {
+    margin-top: 15px;
+	box-shadow:inset 0px 1px 0px 0px #a6827e;
+	background:linear-gradient(to bottom, #d68a3e 5%, #42280c 100%);
+	background-color:#d68a3e;
+	border-radius:16px;
+	border:1px solid #54381e;
+    display:flex;
+    justify-content: center;
+    margin-left: 35px;
+    width: 150px;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:8px 19px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #4d3534;
+    
+}
+.bañadir:hover {
+	background:linear-gradient(to bottom, #42280c 5%, #d68a3e 100%);
+	background-color:#42280c;
+}
+.bañadir:active {
+	position:relative;
+	top:1px;
+}
+
+
+
 
 @media screen and (min-width: 556px) and (max-width: 768px){
     .container_form{
@@ -114,4 +203,11 @@ video{
     .container_form{
         border: 2px solid yellow;
     }
+
+    #container-productos{
+        display: flex;
+        align-content: center;
+        justify-content: center;        
+    }
+    
 }
