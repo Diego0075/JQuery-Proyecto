@@ -1,3 +1,11 @@
+function subeScroll() {
+   $(".btn-flotante").click(function() {
+       $("html").animate(
+           {scrollTop: 0}, 4000);
+   });
+   
+}
+
 
 function crearTestimonios(){
    $.ajax({

@@ -1,4 +1,7 @@
-
+#svg-nav{
+    position: absolute;
+    z-index: 0;
+}
 
  .navbar { 
     display: flex;
@@ -9,12 +12,14 @@
 }
 
 .navbar img {
+    z-index: 2;
     width: 85px;
     height: auto;
     margin: 10px 0px;
 }
 
 .navbar input {
+    z-index: 2;
     margin-left: auto;
     margin-right: 20px;
 
@@ -35,7 +40,7 @@ body{
 
 
 video{
-
+    z-index: 2;
     width: 100%;
     object-fit: contain;
 }
