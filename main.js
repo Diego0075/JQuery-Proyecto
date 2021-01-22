@@ -84,7 +84,7 @@ function crearProductos(){
 
 crearProductos();
 
-
+// Validacion de Formulario
 $(function() {
     $("#nombre_form").focusout(function(){
        comprueba_nom();
@@ -172,6 +172,8 @@ $(function() {
     }
  });
 
+
+
  var vista = false;
 
  $(".bvista").click(function(){
@@ -188,7 +190,7 @@ $(function() {
  });
 
 
-/* Animacion de los productos al hacer scroll */
+
 function animacionProductos(){
    document.addEventListener('scroll', function (e) {
        var top  = window.pageYOffset + window.innerHeight,
@@ -200,7 +202,7 @@ function animacionProductos(){
    });
 }
 
-/* Animacion de los testimonios al hacer scroll */
+
 function animacionTestimonios(){
    document.addEventListener('scroll', function (e) {
        var top  = window.pageYOffset + window.innerHeight,
@@ -214,6 +216,8 @@ function animacionTestimonios(){
 
 animacionProductos();
 animacionTestimonios();
+
+// No he encontrado ninguna api (que siga funcionando) que no sea la de google para obtener la ciudad por medio de la longitud y latitud
 
 function encuentra(){
    if ("geolocation" in navigator){ 
