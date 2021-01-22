@@ -378,6 +378,29 @@ footer div:first-child,footer div:nth-child(2){
 }
 
 
+#container-productos div {
+    opacity: 0.2;
+}
+
+@keyframes animation {
+    100% {
+      opacity: 1;
+    }
+}
+
+#container-productos.animate div {
+    animation: animation 1.7s forwards;
+}
+
+ #testimonios-general div {
+    opacity: 0;
+}
+
+
+#testimonios-general.animate div {
+    animation: animation 1.7s forwards;
+} 
+
 @media screen and (min-width: 556px) and (max-width: 809px){
     
     

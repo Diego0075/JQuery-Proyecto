@@ -186,3 +186,31 @@ $(function() {
          })
       }
  });
+
+
+/* Animacion de los productos al hacer scroll */
+function animacionProductos(){
+   document.addEventListener('scroll', function (e) {
+       var top  = window.pageYOffset + window.innerHeight,
+           isVisible = top > document.querySelector('#container-productos > div').offsetTop;
+            
+        if (isVisible) {
+          document.getElementById('container-productos').classList.add('animate');
+       }
+   });
+}
+
+/* Animacion de los testimonios al hacer scroll */
+function animacionTestimonios(){
+   document.addEventListener('scroll', function (e) {
+       var top  = window.pageYOffset + window.innerHeight,
+           isVisible = top > document.querySelector('#testimonios-general > div').offsetTop;
+            
+        if (isVisible) {
+          document.getElementById('testimonios-general').classList.add('animate');
+       }
+   });
+}
+
+animacionProductos();
+animacionTestimonios();
