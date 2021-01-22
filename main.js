@@ -9,7 +9,26 @@ function crearTestimonios(){
       $("img").remove("#testimonio-img");
          for (let i=0; i<3; i++){
             let aleatorio = Math.floor(Math.random()*8);
-            $("div#testimonio"+i.toString()).prepend('<img id="testimonio-img" src="'+response.testimonios[aleatorio].img+'"/>');
+            ($("div#testimonio"+i.toString()).prepend('<img id="testimonio-img" src="'+response.testimonios[aleatorio].img+'"/>')).css({
+               
+               "font-size": "21px",
+               "background":"rgba(145, 232, 232, 0.2)",
+               "border-radius":"24px",
+               "margin":"15px"
+               // "border":"1px solid black",
+               // "width":"100%"
+               
+
+               // "opacity": "0",
+               
+               // "-webkit-transition": "opacity 1s ease-in",
+               //    "-moz-transition": "opacity 1s ease-in",
+               //     "-ms-transition": "opacity 10s ease-in",
+               //      "-o-transition": "opacity 9s ease-in",
+               //         "transition": "opacity 10s ease-in"
+               
+               
+            });
             $("h3#nombre"+i.toString()).text(response.testimonios[aleatorio].nombre);
             $("p#cuerpo"+i.toString()).text(response.testimonios[aleatorio].cuerpo);
             $("label#fecha"+i.toString()).text(response.testimonios[aleatorio].fecha);
@@ -22,6 +41,7 @@ function crearTestimonios(){
 
 crearTestimonios();
 
+//  $("#testimonio0").delay(1000).animate({ opacity: 1 }, 700);​
 
 function crearProductos(){
    $.ajax({
@@ -30,8 +50,8 @@ function crearProductos(){
       data: "data",
       success: function(response){
          for (let i=0; i<3; i++){
-            $("div#cestas"+i.toString()).prepend('<label>'+response.productos[i].precio+'</label>');
-            $("div#cestas"+i.toString()).prepend('<p>'+response.productos[i].cuerpo+'</p>');
+            $("div#cestas"+i.toString()).prepend('<label>'+response.productos[i].precio+'</label>').css("textAlign","center");
+            $("div#cestas"+i.toString()).prepend('<p>'+response.productos[i].cuerpo+'</p>').css("textAlingn");
              $("div#cestas"+i.toString()).prepend('<img id="cesta-img" src="'+response.productos[i].img+'"/>');
              $("div#cestas"+i.toString()).prepend('<h2>'+response.productos[i].titulo+'</h2>');
 
@@ -73,7 +93,9 @@ $(function() {
           $("#nom_label").show();
           $("#apellidos_form" ).prop( "disabled", false );
        } else {
-          $("#nom_error").html("El nombre solo debe conetener caracteres");
+          ($("#nom_error").html("El nombre solo debe conetener caracteres")).css({
+             "color":"red"
+          });
           $("#nom_error").show();
           $("#nombre_form").css("border","2px solid #F90A0A");
           $("#apellidos_form").prop( "disabled", true );
@@ -89,7 +111,9 @@ $(function() {
           $("apellidos_label").show();
           $("#email_form" ).prop( "disabled", false );
        } else {
-          $("#apellidos_error").html("El apellido solo debe contener caracteres");
+          ($("#apellidos_error").html("El apellido solo debe contener caracteres")).css({
+            "color":"red"
+         });
           $("#apelidos_error").show();
           $("#apellidos_form").css("border","2px solid #F90A0A");
           $("#email_form" ).prop( "disabled", true );
@@ -104,22 +128,30 @@ $(function() {
           $("#email_form").css("border","2px solid #34F458");
           $("#nacimiento_form").prop("disabled",false)
        } else {
-          $("#email_error").html("Introduce el email correctamente");
+          ($("#email_error").html("Introduce el email correctamente")).css({
+            "color":"red"
+         });
           $("#email_error").show();
           $("#email_form").css("border","2px solid #F90A0A");
        }
     }
 
     function comprueba_nacimiento(){
-      var pattern = /^(\d{1,2})(\/|-)(\d{1,2})(\/|-)(\d{4})$/;
+      var pattern = /^(\d{1,2})-(\d{1,2})-(\d{4})$/;
       var nacimientoform = $("#nacimiento_form").val();
       if (pattern.test(nacimientoform) && nacimientoform !== '') {
          $("#nacimiento_error").hide();
          $("#nacimiento_form").css("border","2px solid #34F458");
       } else {
-         $("#nacimiento_error").html("El formato de la fecha de nacimiento es dd/mm/yyyy");
+         ($("#nacimiento_error").html("El formato de la fecha de nacimiento es dd-mm-yyyy")).css({
+            "color":"red"
+         });
          $("#nacimiento_error").show();
          $("#nacimiento_form").css("border","2px solid #F90A0A");
       }
     }
  });
+
+//  function maquetarhero(){
+//     $("#textus").prepend("<p>"++"</p>")
+//  }
