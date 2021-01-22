@@ -1,10 +1,19 @@
-function subeScroll() {
-   $(".btn-flotante").click(function() {
-       $("html").animate(
-           {scrollTop: 0}, 4000);
+$(document).ready(function(){
+    
+   $(window).scroll(function(){
+       if ($(this).scrollTop() > 100) {
+           $('#bscroll').fadeIn();
+       } else {
+           $('#bscroll').fadeOut();
+       }
    });
    
-}
+   $('#bscroll').click(function(){
+       $('html, body').animate({scrollTop : 0},600);
+       return false;
+   });
+   
+});
 
 
 function crearTestimonios(){
