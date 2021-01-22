@@ -178,11 +178,11 @@ $(function() {
     vista=!vista;
       if(vista){
          $("#testimonios-general").css({
-            "flex-direction":"row"
+            "display":"flex"
          })
       }else{
          $("#testimonios-general").css({
-            "flex-direction":"column"
+            "display":"grid"
          })
       }
  });
