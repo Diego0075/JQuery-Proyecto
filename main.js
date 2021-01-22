@@ -75,7 +75,10 @@ function crearProductos(){
              
 
          }
-     }
+     },error: function(){
+      console.log("No se han podido obetner los productos");
+      setTimeout(crearProductos, 5000);
+  }
  })
 }
 
