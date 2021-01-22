@@ -214,3 +214,15 @@ function animacionTestimonios(){
 
 animacionProductos();
 animacionTestimonios();
+
+function encuentra(){
+   if ("geolocation" in navigator){ 
+		navigator.geolocation.getCurrentPosition(function(position){ 
+				console.log("Tu latitud es "+position.coords.latitude+" Y tu longitud es: "+ position.coords.longitude);
+			});
+	}else{
+		console.log("Error al obtener latitud y longitud");
+   };
+}
+
+encuentra()
