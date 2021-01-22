@@ -172,6 +172,17 @@ $(function() {
     }
  });
 
-//  function maquetarhero(){
-//     $("#textus").prepend("<p>"++"</p>")
-//  }
+ var vista = false;
+
+ $(".bvista").click(function(){
+    vista=!vista;
+      if(vista){
+         $("#testimonios-general").css({
+            "flex-direction":"row"
+         })
+      }else{
+         $("#testimonios-general").css({
+            "flex-direction":"column"
+         })
+      }
+ });
