@@ -47,7 +47,7 @@
        
     },
 
-    {"img":"/img/persona8.jpg",
+    {"img":"img/persona8.jpg",
         "nombre":"Macarena Gomez",
         "fecha":"04/10/2020",
         "cuerpo":"Recomiendo la cesta de Quesos, encima cada semana es diferente. Mi favorito el de cabra con nueces y miel"
