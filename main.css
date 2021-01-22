@@ -207,7 +207,7 @@ video{
 
 
 .bañadir {
-    margin-top: 15px;
+    position: relative;
 	box-shadow:inset 0px 1px 0px 0px #a6827e;
 	background:linear-gradient(to bottom, #d68a3e 5%, #42280c 100%);
 	background-color:#d68a3e;
@@ -347,44 +347,110 @@ footer div:first-child,footer div:nth-child(2){
 }
 
 
-@media screen and (min-width: 556px) and (max-width: 768px){
-    .container-header{
-        width: 100%;
-    }
-
-     #testimonios-general{
-         
-        flex-direction: column;
-    }
+@media screen and (min-width: 556px) and (max-width: 810px){
     
-    .container-hero{
-        
-        
-    } 
-}
+    
 
+    #usdiv{
+        height: 430px;
+        grid-row-start:1;
+        grid-row-end:2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
 
-@media screen and (min-width: 768px){
-    /* .container_form{
-        border: 2px solid yellow;
+    
+
+    #usdiv::after{
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index:-1;
+        background-image: url(/img/huerto.jpg);
+        border-radius: 25px;
+        background-size: cover;
+        opacity: 0.7;
+      }
+
+    #container-hero{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:auto 1fr 1fr ;
+    }
+
+    .container_form{
+        grid-column: 2/3;
+        grid-row: 2/3;
     }
 
     #container-productos{
-        display: flex;
-        align-content: center;
-        justify-content: center;        
-    }
-    #testimonios-general{
-        border: none;
-        flex-wrap: nowrap;
-        justify-content: center;
+        grid-column: 1;
+        grid-row: 2/4;
         display: flex;
         flex-direction: row;
+        align-content: center;
+        justify-content: center;       
+    }
+
+    
+    #container-testimonios{
+        grid-row: 3/4;
+        grid-column:2/3
+    }
+    .bañadir{
+        margin-left: -10px;
     }
     
-    #container-hero{
-        grid-template-rows: 0.46fr 1fr auto 0.1fr;
+    
+}
+
+
+@media screen and (min-width: 810px){
+
+    #usdiv{
+        height: 430px;
+        grid-row:1/2;
+       
     }
-   */
+
+    
+
+    #usdiv::after{
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index:-1;
+        background-image: url(/img/huerto.jpg);
+        border-radius: 25px;
+        background-size: cover;
+        opacity: 0.7;
+      }
+
+    #container-hero{
+        grid-template-rows:auto 1fr 0.5fr auto;
+    }
+
+    .container_form{
+       grid-row: 4/5;
+    }
+
+    #container-productos{
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;       
+    }
+
+    
+    #container-testimonios{
+        grid-row: 3/4;
+    }
+    
     
 }
